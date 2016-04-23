@@ -1,0 +1,36 @@
+{
+  "name": "gulp-condense",
+  "description": "Condense newlines in a string to the specified number or 2 by default.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-condense",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/gulp-condense",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-condense/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-format-md": "*",
+    "mocha": "*"
+  },
+  "keywords": [],
+  "verb": {
+    "layout": "default",
+    "plugins": ["gulp-format-md"],
+    "related": {
+      "list": []
+    },
+    "reflinks": ["verb"]
+  }
+}
