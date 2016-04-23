@@ -7,15 +7,12 @@
 
 'use strict';
 
-var debug = require('debug')('gulp-condense');
+var condense = require('condense-newlines');
+var through = require('through2');
 
-module.exports = function(config) {
-  return function(app) {
-    if (this.isRegistered('gulp-condense')) return;
-
-    this.define('gulp-condense', function() {
-      debug('running gulp-condense');
-      
-    });
-  };
+module.exports = function(options) {
+  return through.obj(function(file, enc, next) {
+    file.contents = new Buffer(condense(file.contents.toString(), options));
+    next(null, file);
+  });
 };
