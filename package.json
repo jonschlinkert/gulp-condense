@@ -1,6 +1,6 @@
 {
   "name": "gulp-condense",
-  "description": "Condense newlines in a string to the specified number or 2 by default.",
+  "description": "Remove extra newlines in a string.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/gulp-condense",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -19,18 +19,41 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "gulp-format-md": "*",
-    "mocha": "*"
+  "dependencies": {
+    "condense-newlines": "^0.2.0",
+    "through2": "^2.0.1"
   },
-  "keywords": [],
+  "devDependencies": {
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.4.5",
+    "vinyl": "^1.1.1"
+  },
+  "keywords": [
+    "condense",
+    "gulp",
+    "gulpplugin",
+    "newline",
+    "plugin",
+    "reduce",
+    "remove",
+    "stream",
+    "string",
+    "strip"
+  ],
   "verb": {
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "reflinks": [
+      "verb"
+    ],
     "layout": "default",
-    "plugins": ["gulp-format-md"],
-    "related": {
-      "list": []
-    },
-    "reflinks": ["verb"]
+    "toc": false,
+    "tasks": [
+      "readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
